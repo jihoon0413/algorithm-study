@@ -1,4 +1,4 @@
-package org.example.백준.일반수학1.진법변환;
+package org.example.백준.일반수학1.진법변환_2745;
 
 import java.io.BufferedReader;
 import java.io.IOException;
