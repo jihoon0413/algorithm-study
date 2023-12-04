@@ -1,4 +1,4 @@
-package org.example.백준.자료구조1.괄호_9012;
+package org.example.백준.알고리즘기초_1_강의.자료구조1.괄호_9012;
 
 import java.io.BufferedReader;
 import java.io.IOException;

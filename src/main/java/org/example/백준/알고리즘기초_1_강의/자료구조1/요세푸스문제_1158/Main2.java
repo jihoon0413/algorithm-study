@@ -1,4 +1,4 @@
-package org.example.백준.자료구조1.요세푸스문제_1158;
+package org.example.백준.알고리즘기초_1_강의.자료구조1.요세푸스문제_1158;
 
 import java.io.*;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package org.example.백준.자료구조1.큐_10845;
+package org.example.백준.알고리즘기초_1_강의.자료구조1.큐_10845;
 
 import java.io.BufferedReader;
 import java.io.IOException;

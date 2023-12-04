@@ -1,16 +1,18 @@
-package org.example.백준.자료구조1.덱_10866;
+package org.example.백준.알고리즘기초_1_강의.자료구조1.덱_10866;
 
 import java.io.*;
-import java.util.Deque;
-import java.util.LinkedList;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main2 {
+    static int front = 10000;
+    static int back = 10001;
+    static int size = 0;
+    static int[] deque = new int[20001];
+
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        Deque<Integer> deque = new LinkedList<>();
 
         int a = Integer.parseInt(br.readLine());
 
@@ -23,35 +25,44 @@ public class Main {
             switch (cmd) {
 
                 case "push_front":
-                    deque.offerFirst(Integer.parseInt(st.nextToken()));
+
+                    deque[front] = Integer.parseInt(st.nextToken());
+                    front--;
+                    size++;
                     break;
 
                 case "push_back":
-                    deque.offer(Integer.parseInt(st.nextToken()));
+                    deque[back] = Integer.parseInt(st.nextToken());
+                    back++;
+                    size++;
                     break;
 
                 case "pop_front":
-                    if(!deque.isEmpty()) {
-                        bw.write(deque.pollFirst() + "\n");
+                    if(size != 0) {
+                        bw.write(deque[front+1] + "\n");
+                        front++;
+                        size--;
                     } else {
                         bw.write(-1 + "\n");
                     }
                     break;
 
                 case "pop_back":
-                    if(!deque.isEmpty()) {
-                        bw.write(deque.pollLast() + "\n");
+                    if(size != 0) {
+                        bw.write(deque[back-1] + "\n");
+                        back--;
+                        size--;
                     } else {
                         bw.write(-1 + "\n");
                     }
                     break;
 
                 case "size":
-                    bw.write(deque.size()+ "\n");
+                    bw.write(size+ "\n");
                     break;
 
                 case "empty":
-                    if(deque.isEmpty()) {
+                    if(size == 0) {
                         bw.write(1 + "\n");
                     } else {
                         bw.write(0 + "\n");
@@ -59,16 +70,16 @@ public class Main {
                     break;
 
                 case "front":
-                    if(!deque.isEmpty()) {
-                        bw.write(deque.getFirst() + "\n");
+                    if(size != 0) {
+                        bw.write(deque[front+1] + "\n");
                     } else {
                         bw.write(-1 + "\n");
                     }
                     break;
 
                 case "back":
-                    if(!deque.isEmpty()) {
-                        bw.write(deque.getLast() + "\n");
+                    if(size != 0) {
+                        bw.write(deque[back-1] + "\n");
                     } else {
                         bw.write(-1 + "\n");
                     }
@@ -78,6 +89,7 @@ public class Main {
 
         bw.flush();
         bw.close();
+
 
     }
 }
