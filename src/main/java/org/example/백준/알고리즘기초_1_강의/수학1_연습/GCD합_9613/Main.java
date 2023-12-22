@@ -1,4 +1,4 @@
-package org.example.백준.알고리즘기초_1_강의.수학1.GCD합_9613;
+package org.example.백준.알고리즘기초_1_강의.수학1_연습.GCD합_9613;
 
 import java.io.BufferedReader;
 import java.io.IOException;
