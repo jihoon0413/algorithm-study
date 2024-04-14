@@ -1,4 +1,4 @@
-package org.example.백준.알고리즘기초_1_강의.다이나믹프로그래밍1.가장긴바이토닉부분수열_11054;
+package org.example.백준.알고리즘기초_1_강의.다이나믹프로그래밍1_연습.가장긴바이토닉부분수열_11054;
 
 import java.io.BufferedReader;
 import java.io.IOException;
