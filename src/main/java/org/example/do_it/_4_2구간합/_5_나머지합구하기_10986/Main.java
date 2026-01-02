@@ -1,4 +1,4 @@
-package org.example.do_it._4_2구간합._3_나머지합구하기_10986;
+package org.example.do_it._4_2구간합._5_나머지합구하기_10986;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package org.example.do_it._4_2구간합._1_구간합구하기4_11659;
+package org.example.do_it._4_2구간합._3_구간합구하기4_11659;
 
 import java.io.BufferedReader;
 import java.io.IOException;
