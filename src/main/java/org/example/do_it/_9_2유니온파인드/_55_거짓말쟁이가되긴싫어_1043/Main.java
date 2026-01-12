@@ -44,7 +44,7 @@ public class Main {
 
         for(int i = 0 ; i < M ; i++) {
             int count = list.get(i).size();
-            int first = list.get(i).get(0);
+            int first = list.get(i).get(0);     // 여러명을 같은 집합으로 합치고 싶으면 앞쪽을 하나의 기준으로 삼으면 된다. (1,2,3) 일때 1을 기준으로 1union2, 1union3
             for(int j = 0 ; j < count ; j++) {
                 union(first, list.get(i).get(j));
             }
