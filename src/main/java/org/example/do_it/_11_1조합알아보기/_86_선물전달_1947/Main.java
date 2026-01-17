@@ -17,8 +17,8 @@ public class Main {
         D[1] = 0;
         D[2] = 1;
 
-        for(int i = 3; i <= N ; i++) {
-            D[i] = (i-1) * (D[i-1] + D[i-2]) % MOD; // D[i-2] 양방향 서로 교환,  D[i-1] 단방향 상대방 선물도 다른 곳에 사람에게 준경우
+        for (int i = 3; i <= N; i++) {
+            D[i] = (i - 1) * (D[i - 1] + D[i - 2]) % MOD; // D[i-2] 양방향 서로 교환,  D[i-1] 단방향 상대방 선물도 다른 곳에 사람에게 준경우
 
             /*
             어떤 수가 자기 자신을 빼고 다른 사람에게 주는 경우의 수 => (i-1)
@@ -31,7 +31,8 @@ public class Main {
             D[i] = (i-1) * (D[i-1] +  D[i-2]);
              */
 
-        System.out.println(D[N]);
+            System.out.println(D[N]);
+        }
     }
 }
 
